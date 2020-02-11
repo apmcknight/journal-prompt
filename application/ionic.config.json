@@ -1,5 +1,5 @@
 {
   "name": "application",
   "integrations": {},
-  "type": "angular"
+  "type": "ionic-angular"
 }
