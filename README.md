@@ -1,5 +1,5 @@
 ![GitHub issues](https://img.shields.io/github/issues/apmcknight/journal-prompt?style=flat-square)&nbsp; &nbsp;
-![GitHub repo size](https://img.shields.io/github/repo-size/apmcknight/journal-prompt?style=flat-square) &nbsp; &nbsp;[![Build Status](https://travis-ci.com/apmcknight/journal-prompt.svg?branch=master)](https://travis-ci.com/username/projectname)
+![GitHub repo size](https://img.shields.io/github/repo-size/apmcknight/journal-prompt?style=flat-square) &nbsp; &nbsp;[![Build Status](https://travis-ci.com/apmcknight/journal-prompt.svg?branch=master)](https://travis-ci.com/apmcknight/journal-prompt)
 
 
 
