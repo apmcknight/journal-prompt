@@ -15,3 +15,4 @@ We are accepting new prompts to be 'base' prompts that will be hard coded into t
 Currently the API is only extendable to the Journal Prompt application directory, and thus to only this project. 
 I have plans to host a more dynamic API that can be called and extended to any project!
 
+
