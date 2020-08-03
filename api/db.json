@@ -1,10 +1,10 @@
 {
   "basePrompts": [
     {
-      "id": 0,
-      "cat": "Spiritual",
       "duration": "Less than 5m",
-      "prompt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, iste velit porro illo facilis quibusdam possimus maxime suscipit quos iure magnam sunt nesciunt nostrum atque eaque natus ex sint fugiat!"
+      "CAT": "spiritual",
+      "prompt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, iste velit porro illo facilis quibusdam possimus maxime suscipit quos iure magnam sunt nesciunt nostrum atque eaque natus ex sint fugiat!",
+      "id": 0
     },
     {
       "duration": "0",
