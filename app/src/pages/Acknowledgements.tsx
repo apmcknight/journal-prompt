@@ -11,16 +11,15 @@ import {
   IonCardTitle, 
   IonCardContent 
 } from '@ionic/react';
-import './Tab1.css';
+import './Acknowledgements.css';
 import Greeting from '../components/Greeting';
-import TutorialHero from '../assets/tutorial-image.jpg';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>j-prompt.</IonTitle>
+          <IonTitle>Acknowledgements</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -34,26 +33,27 @@ const Tab1: React.FC = () => {
         
         <IonCard>
           <IonCardHeader>
-            <IonCardSubtitle>Featured Prompt</IonCardSubtitle>
+            <IonCardSubtitle>Acknowledgements</IonCardSubtitle>
             <IonCardTitle>Prompt One</IonCardTitle>
-            <IonCardContent>Hello ipsum dolor sit amet consectetur adipisicing elit. Minima, quibusdam!</IonCardContent>
+            <IonCardContent>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quibusdam!</IonCardContent>
           </IonCardHeader>
         </IonCard>
   
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Randomize</IonCardTitle>
+            <IonCardSubtitle>Featured Prompts</IonCardSubtitle>
+            <IonCardTitle>Prompt Two</IonCardTitle>
           </IonCardHeader>
         </IonCard>
 
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Prompt Catagories</IonCardTitle>
+            <IonCardSubtitle>Featured Prompts</IonCardSubtitle>
+            <IonCardTitle>Prompt Three</IonCardTitle>
           </IonCardHeader>
         </IonCard>
 
         <IonCard>
-          <img src={TutorialHero} alt=""/>
           <IonCardHeader>
             <IonCardSubtitle>Tutorial</IonCardSubtitle>
             <IonCardTitle>Learn Journal Prompt</IonCardTitle>
