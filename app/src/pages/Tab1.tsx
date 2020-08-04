@@ -14,8 +14,11 @@ import {
 import './Tab1.css';
 import Greeting from '../components/Greeting';
 import TutorialHero from '../assets/tutorial-image.jpg';
+import data from '../assets/db.json';
 
 const Tab1: React.FC = () => {
+  const promptData = data.prompts;
+
   return (
     <IonPage>
       <IonHeader>
@@ -35,8 +38,8 @@ const Tab1: React.FC = () => {
         <IonCard>
           <IonCardHeader>
             <IonCardSubtitle>Featured Prompt</IonCardSubtitle>
-            <IonCardTitle>Prompt One</IonCardTitle>
-            <IonCardContent>Hello ipsum dolor sit amet consectetur adipisicing elit. Minima, quibusdam!</IonCardContent>
+              <IonCardTitle>{promptData.sports[2].title}</IonCardTitle>
+            <IonCardContent>{promptData.sports[2].prompt}</IonCardContent>
           </IonCardHeader>
         </IonCard>
   
