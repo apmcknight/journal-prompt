@@ -57,6 +57,7 @@
         "mindfulness":[
             {
                 "id": 0,
+                "title": "Forgive Yourself",
                 "catagroy": "mindfulness",
                 "prompt": "First, write down three people that hurt you. Then write down three people that you've hurt. Next write down why you can or cannot forgive yourself for others hurting you and you hurting others." 
             },

@@ -1,7 +1,20 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import {
+  IonContent, 
+  IonHeader, 
+  IonPage, 
+  IonTitle, 
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardContent,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonIcon
+} from '@ionic/react';
 import './Tab2.css';
+import PromptData from '../assets/db.json';
+import { americanFootball, attach, happy, cloudyNight } from 'ionicons/icons';
 
 const Tab2: React.FC = () => {
   return (
@@ -11,13 +24,63 @@ const Tab2: React.FC = () => {
           <IonTitle>Prompts</IonTitle>
         </IonToolbar>
       </IonHeader>
+      
       <IonContent>
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Prompts</IonTitle>
-          </IonToolbar>
+            <IonToolbar>
+              <IonTitle size="large">Prompts</IonTitle>
+            </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+
+        <IonCard>
+          <IonCardHeader>
+            <IonCardSubtitle>FEATURED PROMPT</IonCardSubtitle>
+            <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
+            <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
+          </IonCardHeader>
+        </IonCard>
+
+        <IonCardSubtitle className="Subtitle">Catagories</IonCardSubtitle>
+
+        <IonCard className="CardMargin">
+          <IonCardHeader>
+            <IonCardTitle className="ToUppercase">
+              <IonIcon className="Icon" icon={happy}/>
+              {PromptData.prompts.mindfulness[0].catagroy}
+            </IonCardTitle>
+          </IonCardHeader>
+        </IonCard>
+
+        <IonCard className="CardMargin">
+          <IonCardHeader>
+            <IonCardTitle className="ToUppercase">
+              <IonIcon className="Icon" icon={cloudyNight}/>
+              {PromptData.prompts.meditation[0].catagroy}
+            </IonCardTitle>
+          </IonCardHeader>
+        </IonCard>
+
+        <IonCard className="CardMargin">
+          <IonCardHeader>
+            <IonCardTitle className="ToUppercase">
+              <IonIcon className="Icon" icon={americanFootball}/>
+              {PromptData.prompts.sports[0].catagroy}
+            </IonCardTitle>
+          </IonCardHeader>
+        </IonCard>
+
+        <IonCard className="CardMargin">
+          <IonCardHeader>
+            <IonCardTitle className="ToUppercase">
+              <IonIcon className="Icon" icon={attach}/>
+              {PromptData.prompts.productivity[0].catagroy}
+            </IonCardTitle>
+          </IonCardHeader>
+        </IonCard>
+
+        
+
+
       </IonContent>
     </IonPage>
   );

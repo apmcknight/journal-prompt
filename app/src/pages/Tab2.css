@@ -1,0 +1,14 @@
+.ToUppercase{ text-transform: capitalize; }
+.CardMargin{ margin-top: 10%;}
+.Icon{ 
+    position: relative;
+    bottom: -4px;
+    padding-right: 5%; 
+    display: inline-block; 
+}
+.Subtitle{
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 1em;
+    letter-spacing: .15em;
+}

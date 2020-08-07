@@ -9,19 +9,17 @@ import {
   IonCardHeader, 
   IonCardSubtitle, 
   IonCardTitle,
-  IonCardContent,
-  IonIcon,
+  IonCardContent, 
 } from '@ionic/react';
 import './Tab1.css';
 import Greeting from '../components/Greeting';
 import TutorialHero from '../assets/tutorial-image.jpg';
 import PromptData from '../assets/db.json';
-import { flash, repeat, bookmarks } from 'ionicons/icons';
-
 
  
 const Tab1: React.FC = () => {
     return (
+  
       <IonPage>
         <IonHeader>
           <IonToolbar>
@@ -38,11 +36,8 @@ const Tab1: React.FC = () => {
           </IonHeader>
             
           <IonCard>
-            <IonCardHeader>
-              <IonCardSubtitle>
-              <IonIcon icon={flash} className="FeaturedIcon"/>
-                FEATURED PROMPT
-              </IonCardSubtitle>
+          <IonCardHeader>
+              <IonCardSubtitle>FEATURED PROMPT</IonCardSubtitle>
               <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
               <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
             </IonCardHeader>
@@ -50,19 +45,13 @@ const Tab1: React.FC = () => {
 
           <IonCard>
             <IonCardHeader>
-              <IonCardTitle>
-                <IonIcon icon={repeat} className="FeaturedIcon"/>
-                Randomize
-              </IonCardTitle>
+              <IonCardTitle>Randomize</IonCardTitle>
             </IonCardHeader>
           </IonCard>
 
           <IonCard>
             <IonCardHeader>
-              <IonCardTitle>
-                <IonIcon icon={bookmarks} className="FeaturedIcon"/>
-                Prompt Catagories
-                </IonCardTitle>
+              <IonCardTitle>Prompt Catagories</IonCardTitle>
             </IonCardHeader>
           </IonCard>
 
