@@ -3,16 +3,19 @@
         "sports":[
             {
                 "id": 0,
+                "title": "Won The Game",
                 "catagroy": "sports",
                 "prompt": "Write about a time that you've won a game. How did you feel? How close were you to loosing?"
             },
             {
                 "id": 1,
+                "title": "Why do we Play Sports?",
                 "catagroy": "sports",
                 "prompt": "What is your favorite sport to play, and why?"
             },
             {
                 "id": 2,
+                "title": "Sports are Fun.",
                 "catagroy": "sports",
                 "prompt": "What was the best part about playing sports? What makes it the best?"
             }
