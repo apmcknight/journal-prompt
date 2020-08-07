@@ -10,7 +10,9 @@ import {
   IonCardContent,
   IonCardSubtitle,
   IonCardTitle,
-  IonIcon
+  IonIcon,
+  IonButton,
+  IonRouterLink
 } from '@ionic/react';
 import './Tab2.css';
 import PromptData from '../assets/db.json';
@@ -31,21 +33,22 @@ const Tab2: React.FC = () => {
               <IonTitle size="large">Prompts</IonTitle>
             </IonToolbar>
         </IonHeader>
-
-        <IonCard>
-          <IonCardHeader>
-            <IonCardSubtitle>FEATURED PROMPT</IonCardSubtitle>
-            <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
-            <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
-          </IonCardHeader>
-        </IonCard>
+        <IonRouterLink routerLink="/prompt-one">
+          <IonCard>
+            <IonCardHeader>
+              <IonCardSubtitle>FEATURED PROMPT</IonCardSubtitle>
+              <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
+              <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
+            </IonCardHeader>
+          </IonCard>
+        </IonRouterLink>
 
         <IonCardSubtitle className="Subtitle">Catagories</IonCardSubtitle>
 
         <IonCard className="CardMargin">
           <IonCardHeader>
             <IonCardTitle className="ToUppercase">
-              <IonIcon className="Icon" icon={happy}/>
+                <IonIcon className="Icon" icon={happy}/>
               {PromptData.prompts.mindfulness[0].catagroy}
             </IonCardTitle>
           </IonCardHeader>

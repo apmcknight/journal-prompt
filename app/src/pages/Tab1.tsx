@@ -11,6 +11,7 @@ import {
   IonCardTitle,
   IonCardContent,
   IonIcon,
+  IonRouterLink
 } from '@ionic/react';
 import './Tab1.css';
 import Greeting from '../components/Greeting';
@@ -36,17 +37,19 @@ const Tab1: React.FC = () => {
               </IonTitle>
             </IonToolbar>
           </IonHeader>
-            
-          <IonCard>
-            <IonCardHeader>
-              <IonCardSubtitle>
-              <IonIcon icon={flash} className="FeaturedIcon"/>
-                FEATURED PROMPT
-              </IonCardSubtitle>
-              <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
-              <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
-            </IonCardHeader>
-          </IonCard>
+
+          <IonRouterLink routerLink="/prompt-one">
+            <IonCard>
+              <IonCardHeader>
+                <IonCardSubtitle>
+                <IonIcon icon={flash} className="FeaturedIcon"/>
+                  FEATURED PROMPT
+                </IonCardSubtitle>
+                <IonCardTitle>{PromptData.prompts.mindfulness[0].title}</IonCardTitle>
+                <IonCardContent>{PromptData.prompts.mindfulness[0].prompt}</IonCardContent>
+              </IonCardHeader>
+            </IonCard>
+          </IonRouterLink>
 
           <IonCard>
             <IonCardHeader>
