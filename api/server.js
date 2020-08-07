@@ -9,7 +9,7 @@ const data = './db.json';
 app.use(cors());
 
 let corsOptions = {
-    origin: 'http://192.168.1.2:8080',
+    origin: 'http://localhost:8080',
     optionsSuccess: 200
 }
 
